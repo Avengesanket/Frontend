@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Internal CSS -->
+    <style>
+        .main_content{
+            margin-top: 4em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="brand">
+            <img class="logo" src="cutlery.png" alt="Ratatouille logo">
+            <h1>Ratatouille</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="menu.html#special-offer">Specials</a></li>
+                <li><a href="menu.html#contact">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_content">
+            <h2 class="slogan">"Indulge in culinary delights and ambiance.
+                <br>
+                Guarantee your spot for an unforgettable
+                <br>
+                dining experience.
+                <br>
+                Reserve your table today!"</h2>
+            <img class="food_img" src="food.jpg" alt="Food image">
+        </div>
+        <button class="btn btn_home" onclick="window.location.href = 'form.html';">Book now</button>
+    </main>
+    <footer>
+        &copy; 2024 Ratatouille. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Menu</title>
+    <style>
+        .menu{
+            margin: 2em auto;
+            align-items: center;
+            width: 70%;
+        }
+        h2{
+            margin: auto;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        section p{
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid aquamarine;
+            width: 100%;
+        }
+
+        th, td {
+            letter-spacing: 1px;
+            border: 1px solid aquamarine;
+            color: white;   
+            padding: 12px; 
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(88, 173, 145);
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(71, 120, 120, 0.1);
+        }
+        tr:nth-child(odd) {
+            background-color: rgba(148, 184, 184, 0.1);
+        }
+        .btn_menu{
+            display: block;
+            margin: 1em auto 4em;
+        }
+        .bold{
+            font-weight: bold;
+            background-color: #333;
+        }
+        .price_highlight{
+            font-weight: bolder;
+            color: whitesmoke;
+        }
+        #special-offer{
+            margin: 2em auto;
+            width: 70%;
+        }
+        #contact{
+            margin: 2em auto;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="brand">
+            <img class="logo" src="cutlery.png" alt="Ratatouille logo">
+            <h1>Ratatouille</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#special-offer">Specials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu">
+            <h2>Menu</h2>
+            <p>Our menu is created with the freshest ingredients, 
+            and we offer a variety of options to suit every taste.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Menu Items</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Breakfast -->
+                    <tr>
+                        <td class="bold" rowspan="4">Breakfast</td>
+                        <td>Classic Omelette</td>
+                        <td class="price_highlight">$8.99</td>
+                    </tr>
+                    <tr>
+                        <td>French Toast with Berries</td>
+                        <td class="price_highlight">$7.49</td>
+                    </tr>
+                    <tr>
+                        <td>Belgian Waffles</td>
+                        <td class="price_highlight">$9.99</td>
+                    </tr>
+                    <tr>
+                        <td>Granola Parfait</td>
+                        <td class="price_highlight">$6.99</td>
+                    </tr>
+                    
+                    <!-- Lunch -->
+                    <tr>
+                        <td class="bold" rowspan="4">Lunch</td>
+                        <td>Quinoa Salad</td>
+                        <td class="price_highlight">$10.99</td>
+                    </tr>
+                    <tr>
+                        <td>Veggie Wrap</td>
+                        <td class="price_highlight">$9.49</td>
+                    </tr>
+                    <tr>
+                        <td>Grilled Cheese Sandwich</td>
+                        <td class="price_highlight">$8.99</td>
+                    </tr>
+                    <tr>
+                        <td>Shrimp Tacos</td>
+                        <td class="price_highlight">$12.99</td>
+                    </tr>
+                    
+                    <!-- Dinner -->
+                    <tr>
+                        <td class="bold" rowspan="4">Dinner</td>
+                        <td>Seafood Paella</td>
+                        <td class="price_highlight">$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Beef Stir-Fry</td>
+                        <td class="price_highlight">$12.99</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetable Lasagna</td>
+                        <td class="price_highlight">$11.49</td>
+                    </tr>
+                    <tr>
+                        <td>Teriyaki Salmon</td>
+                        <td class="price_highlight">$14.99</td>
+                    </tr>
+                    
+                    <!-- Dessert -->
+                    <tr>
+                        <td class="bold" rowspan="4">Dessert</td>
+                        <td>Apple Pie</td>
+                        <td class="price_highlight">$6.99</td>
+                    </tr>
+                    <tr>
+                        <td>Crème Brûlée</td>
+                        <td class="price_highlight">$8.49</td>
+                    </tr>
+                    <tr>
+                        <td>Red Velvet Cake</td>
+                        <td class="price_highlight">$7.99</td>
+                    </tr>
+                    <tr>
+                        <td>Mango Sorbet</td>
+                        <td class="price_highlight">$5.99</td>
+                    </tr>
+                </tbody>
+            </table>            
+
+        </section>
+        <section id="special-offer">
+                <h2>Special Offer</h2>
+                <marquee behavior="scroll" direction="left" scrollamount="10"  class="m_width">
+                    <p style="color: #b54734; font-weight: bold;">Get 20% off on all orders placed on our Website before 5 PM!</p>
+                </marquee>      
+        </section>
+        <section id="contact">
+            <div>
+            <h2>Contact Us</h2>
+            <p>For any Query, call: 123-456-7890</p>
+            </div>
+            <button class="btn btn_menu" onclick="window.location.href = 'form.html';">Book now</button>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Ratatouille. All rights reserved.
+    </footer>
+</body>
+</html>
