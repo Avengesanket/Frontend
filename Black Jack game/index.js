@@ -1,6 +1,8 @@
 let player = {
-    name: "Per",
-    chips: 200
+    name: "User",
+    chips: 200,
+    wins: 0,
+    losses: 0
 }
 
 let cards = []
@@ -13,7 +15,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
-playerEl.textContent = player.name + ": $" + player.chips
+playerEl.textContent = `${player.name}: $${player.chips} | Wins: ${player.wins} | Losses: ${player.losses}`
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -47,10 +49,18 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
+        player.chips += 100; // Example: Player wins and gets 10 chips
+        player.wins++; // Increment wins count
     } else {
         message = "You're out of the game!"
         isAlive = false
+        player.chips -= 5; // Example: Player loses and loses 5 chips
+        player.losses++; // Increment losses count
     }
+    
+    // Update player's chips dynamically in the UI
+    playerEl.textContent = `${player.name}: $${player.chips} | Wins: ${player.wins} | Losses: ${player.losses}`
+
     messageEl.textContent = message
 }
 
